@@ -1,0 +1,40 @@
+.social {
+  @include list-reset;
+  margin: 20px 0 0;
+  background-color: #e2a687;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0 0 6px 6px;
+}
+
+.social__link {
+  width: 37px;
+  height: 37px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  display: block;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.social__link--instagram svg,
+.social__link--facebook svg,
+.social__link--vk svg {
+  width: 25px;
+  height: 25px;
+  margin-top: 6px;
+  fill: #e2a687;
+}
+
+.social__link--instagram:hover svg,
+.social__link--facebook:hover svg,
+.social__link--vk:hover svg {
+  fill: #a20d0d;
+}

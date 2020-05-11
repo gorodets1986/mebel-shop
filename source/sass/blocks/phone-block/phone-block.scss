@@ -1,0 +1,33 @@
+.phone-block {
+  padding-top: 20px;
+  width: 240px;
+  text-align: right;
+}
+
+.phone-block__link {
+  color: #532c21;
+  font-size: 24px;
+  display: block;
+  position: relative;
+}
+
+.phone-block__link::before {
+  content: "";
+  background-image: url(blocks/phone-block/phone-icon.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 10px;
+  top: 3px;
+}
+
+.phone-block__link:hover {
+  color: #a90e0e;
+}
+
+.phone-block__text {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}

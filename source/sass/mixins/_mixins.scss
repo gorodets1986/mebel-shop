@@ -1,0 +1,12 @@
+@mixin Cambria {
+  font-family: Cambria, "Arial", sans-serif;
+}
+
+@mixin Cambria-Bold {
+  font-family: Cambria-Bold, "Arial", sans-serif;
+}
+
+@mixin list-reset {
+  list-style-type: none;
+  padding-left: 0;
+}

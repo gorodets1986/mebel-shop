@@ -1,0 +1,42 @@
+@import "fonts/fonts",
+  "vendors/normalize",
+  "mixins/mixins",
+  "abstracts/variables",
+  "blocks/about-block/about-block",
+  "blocks/footer/footer",
+  "blocks/header/header",
+  "blocks/logo-text/logo-text",
+  "blocks/main/main",
+  "blocks/nav-main/nav-main",
+  "blocks/nav-menu/nav-menu",
+  "blocks/phone-block/phone-block",
+  "blocks/social/social";
+
+body {
+  @include Cambria;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1008px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1008px;
+}

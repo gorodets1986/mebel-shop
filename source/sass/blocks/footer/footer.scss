@@ -1,0 +1,137 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 100%;
+  background: #deb565;
+  margin: 0 -15px 15px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.footer__logo {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer__logo--link {
+  margin-right: 20px;
+}
+
+.footer__logo--text {
+  color: #262525;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.footer__logo--text p {
+  margin: 0 0 10px;
+}
+
+.footer__menu {
+  width: 296px;
+}
+
+.footer__menu--list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer__menu--item {
+  margin-left: 10px;
+  color: #85533b;
+}
+
+.footer__menu--item:first-of-type::before {
+  content: "";
+  margin-right: 0;
+}
+
+.footer__menu--item::before {
+  content: "\2022";
+  margin-right: 10px;
+}
+
+.footer__menu--link {
+  color: #85533b;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.footer__menu--link:hover {
+  color: #a20d0d;
+}
+
+.footer-social {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social__link {
+  width: 33px;
+  height: 32px;
+  border-radius: 50%;
+  display: block;
+  background-color: #ffffff;
+  text-align: center;
+  border: 1px solid gray;
+  margin-right: 15px;
+}
+
+.footer-social__link--instagram svg,
+.footer-social__link--facebook svg,
+.footer-social__link--vk svg {
+  width: 20px;
+  height: 20px;
+  margin-top: 6px;
+  fill: #e2a687;
+}
+
+.footer-social__link--instagram:hover svg,
+.footer-social__link--facebook:hover svg,
+.footer-social__link--vk:hover svg {
+  fill: #a20d0d;
+}
+
+.footer__phone__link {
+  color: #532c21;
+  font-size: 24px;
+  display: block;
+  position: relative;
+}
+
+.footer__phone__link::before {
+  content: "";
+  background-image: url(blocks/phone-block/phone-icon.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -25px;
+  top: 3px;
+}
+
+.footer__phone__link:hover {
+  color: #a90e0e;
+}
+
+.footer__phone__text {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
